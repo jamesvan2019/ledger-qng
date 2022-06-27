@@ -66,4 +66,10 @@ See [COMMAND](https://github.com/LedgerHQ/app-boilerplate/blob/master/doc/COMMAN
 | Lc | 1 | The number of bytes of command data to follow (a value from 0 to 255) |
 | CData | var | Command data with `Lc` bytes |
 
+## Install | Uninstall
+
+`
+https://putukusuma.medium.com/build-an-app-for-ledger-nano-s-on-macbook-and-docker-46be51701206
+`
+
     
