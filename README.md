@@ -71,9 +71,15 @@ See [COMMAND](https://github.com/LedgerHQ/app-boilerplate/blob/master/doc/COMMAN
 sudo apt install python3-pip
 pip3 install virtualenv
 
+# enter clean ledger python3 environment
+
 virtualenv -p python3 ledger
 source ledger/bin/activate
+(ledger)`pwd`
 pip3 install ledgerblue
+
+# exit 
+deactivate
 ```
 
 - install
