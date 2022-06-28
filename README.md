@@ -66,10 +66,26 @@ See [COMMAND](https://github.com/LedgerHQ/app-boilerplate/blob/master/doc/COMMAN
 | Lc | 1 | The number of bytes of command data to follow (a value from 0 to 255) |
 | CData | var | Command data with `Lc` bytes |
 
-## Install | Uninstall
+## Install APP | Uninstall APP
+```
+sudo apt install python3-pip
+pip3 install virtualenv
 
-`
+virtualenv -p python3 ledger
+source ledger/bin/activate
+pip3 install ledgerblue
+```
+
+- install
+```
+python -m ledgerblue.loadApp --targetId 0x31100004 --apdu --tlv --fileName app.hex --appName Qitmeer --appFlags 0x00 --icon "{icon hex}"
+```
+- uninstall
+```
+python -m ledgerblue.deleteApp --targetId 0x31100004 --appName "Qitmeer"
+```
+- reference
 https://putukusuma.medium.com/build-an-app-for-ledger-nano-s-on-macbook-and-docker-46be51701206
-`
+
 
     
