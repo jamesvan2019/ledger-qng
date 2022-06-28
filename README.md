@@ -85,6 +85,7 @@ python -m ledgerblue.loadApp --targetId 0x31100004 --apdu --tlv --fileName app.h
 python -m ledgerblue.deleteApp --targetId 0x31100004 --appName "Qitmeer"
 ```
 - reference
+
 https://putukusuma.medium.com/build-an-app-for-ledger-nano-s-on-macbook-and-docker-46be51701206
 
 
