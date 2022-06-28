@@ -68,27 +68,28 @@ See [COMMAND](https://github.com/LedgerHQ/app-boilerplate/blob/master/doc/COMMAN
 
 ## Install APP | Uninstall APP
 ```
-sudo apt install python3-pip
-pip3 install virtualenv
+[`pwd`]$ sudo apt install python3-pip
+[`pwd`]$ pip3 install virtualenv
 
 # enter clean ledger python3 environment
 
-virtualenv -p python3 ledger
-source ledger/bin/activate
-(ledger)`pwd`
-pip3 install ledgerblue
+[`pwd`]$ virtualenv -p python3 ledger
+[`pwd`]$ source ledger/bin/activate
+
+(ledger)[`pwd`]$ pip3 install ledgerblue
 
 # exit 
-deactivate
+(ledger)[`pwd`]$ deactivate
+[`pwd`]$
 ```
 
 - install
 ```
-python -m ledgerblue.loadApp --targetId 0x31100004 --apdu --tlv --fileName app.hex --appName Qitmeer --appFlags 0x00 --icon "{icon hex}"
+(ledger)[`pwd`]$ python -m ledgerblue.loadApp --targetId 0x31100004 --apdu --tlv --fileName app.hex --appName Qitmeer --appFlags 0x00 --icon "{icon hex}"
 ```
 - uninstall
 ```
-python -m ledgerblue.deleteApp --targetId 0x31100004 --appName "Qitmeer"
+(ledger)[`pwd`]$ python -m ledgerblue.deleteApp --targetId 0x31100004 --appName "Qitmeer"
 ```
 - reference
 
